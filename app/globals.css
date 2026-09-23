@@ -141,14 +141,14 @@
   }
 }
 
-@layer utilities {
+
   .container {
     @apply mx-auto max-w-screen-2xl px-4 md:px-6 lg:px-8;
   }
   .yellow-btn {
     @apply h-12 cursor-pointer bg-gradient-to-b from-yellow-400 to-yellow-500 hover:from-yellow-500 hover:to-yellow-400 text-gray-950 font-medium text-base rounded-lg shadow-lg disabled:opacity-50;
   }
-  .home-wrapper {
+  @utility home-wrapper {
     @apply text-gray-400 flex-col gap-4 md:gap-10 items-center sm:items-start;
   }
   .home-section {
@@ -157,7 +157,7 @@
   .header {
     @apply z-50 w-full h-[70px] bg-gray-800;
   }
-  .header-wrapper {
+  @utility header-wrapper {
     @apply flex justify-between items-center px-6 py-4 text-gray-500;
   }
   .auth-layout {
@@ -376,7 +376,7 @@
   .alert-delete-btn {
     @apply text-gray-400 rounded-full hover:bg-red-600/15 bg-transparent cursor-pointer transition-colors;
   }
-}
+
 
 /* Market News Component Styles */
 .scrollbar-hide {
